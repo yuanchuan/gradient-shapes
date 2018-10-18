@@ -141,9 +141,9 @@ footer a:hover {
   body {
     padding: 3em 1em 0;
   }
-	.preview > div {
-		background-color: rgba(234, 240, 244, 0.38823529411764707) !important;
-	}
+  .preview > div {
+    background-color: rgba(234, 240, 244, 0.38823529411764707) !important;
+  }
   .shape {
     flex-direction: column;
   }
@@ -152,9 +152,9 @@ footer a:hover {
     margin-right: 0;
   }
 
-	.code pre {
-  	padding: 0;
-	}
+  .code pre {
+    padding: 0;
+  }
 
   .code css-doodle {
     display: none;
