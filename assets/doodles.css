@@ -68,4 +68,22 @@
       transform: scale(.5) translateY(-27%);
     }
   );
+
+  --doodle-spaceship: (
+    :doodle {
+      @size: 100%;
+      opacity: .05;
+      right: 0; top: 0;
+      background-blend-mode: color-burn;
+      background: @multi(50, (
+        conic-gradient(
+          from 90deg at 0 0,
+          transparent 25deg, currentColor 25deg,
+          currentColor 65deg, transparent 65deg
+        )
+        @r(100%) @r(100%) / @r(50px) @lr()
+        no-repeat
+      ));
+    }
+  );
 }

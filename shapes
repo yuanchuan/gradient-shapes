@@ -34,6 +34,13 @@ background:
   no-repeat;
 
 
+# oval
+background:
+  radial-gradient(currentColor 50%, transparent 50%)
+  50% 50% / 75% 45%
+  no-repeat;
+
+
 # Ring
 background:
   radial-gradient(
@@ -43,13 +50,6 @@ background:
     transparent calc(50% + 1px)
   )
   50% 50% / 75% 75%
-  no-repeat;
-
-
-# oval
-background:
-  radial-gradient(currentColor 50%, transparent 50%)
-  50% 50% / 75% 45%
   no-repeat;
 
 
@@ -74,6 +74,16 @@ background:
   no-repeat;
 
 
+# Triangle1
+background:
+  linear-gradient(
+    -135deg,
+    currentColor 50%, transparent 50%
+  )
+  50% / 50% 50%
+  no-repeat;
+
+
 # Triangle2
 background:
   conic-gradient(
@@ -84,13 +94,13 @@ background:
   no-repeat;
 
 
-# Triangle1
+# Trapezoid
 background:
-  linear-gradient(
-    -135deg,
-    currentColor 50%, transparent 50%
+  conic-gradient(
+    from 165deg at 50% -86%,
+    currentColor 0, currentColor 8%, transparent 8%
   )
-  50% / 50% 50%
+  50% 50% / 50% 50%
   no-repeat;
 
 
@@ -103,16 +113,6 @@ background:
     currentColor 75%
   )
   50% 120% / 30% 80%
-  no-repeat;
-
-
-# Trapezoid
-background:
-  conic-gradient(
-    from 165deg at 50% -86%,
-    currentColor 0, currentColor 8%, transparent 8%
-  )
-  50% 50% / 50% 50%
   no-repeat;
 
 
