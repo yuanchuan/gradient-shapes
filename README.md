@@ -1,4 +1,4 @@
 # Gradient Shapes
-Shapes generated with single CSS background gradient.
+Shapes generated with CSS background gradients.
 
 [https://yuanchuan.name/gradient-shapes/](https://yuanchuan.name/gradient-shapes/)
