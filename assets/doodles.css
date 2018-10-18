@@ -13,7 +13,7 @@
     }
   );
 
-  --doodle-line2: (
+  --doodle-line1: (
     :doodle {
       @size: 100%;
       top: 0; left: 0;

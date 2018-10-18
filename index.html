@@ -29,7 +29,6 @@ background:
     <div style="background:
   linear-gradient(
     110deg,
-    transparent 0,
     transparent 30%, currentColor 30%,
     currentColor 70%, transparent 70%
   )
@@ -42,7 +41,6 @@ div {
 background:
   linear-gradient(
     110deg,
-    transparent 0,
     transparent 30%, currentColor 30%,
     currentColor 70%, transparent 70%
   )
@@ -155,58 +153,56 @@ background:
 </div>
 
 
-<div class="shape" data-name="line2">
-  <div class="preview">
-    <div style="background:
-  linear-gradient(90deg, currentColor, currentColor)
-  50% / 2px 75%
-  no-repeat;"></div>
-  </div>
-  <div class="code">
-{% highlight css %}
-div {
-background:
-  linear-gradient(90deg, currentColor, currentColor)
-  50% / 2px 75%
-  no-repeat;
-}
-{% endhighlight %}
-  <css-doodle use="var(--doodle-line2)"></css-doodle>
-  </div>
-</div>
-
-
 <div class="shape" data-name="line1">
   <div class="preview">
     <div style="background:
-  linear-gradient(
-    -60deg,
-    transparent 0,
-    transparent calc(50% - 1px),
-    currentColor calc(50% - 1px),
-    currentColor calc(50% + 1px),
-    transparent calc(50% + 1px)
-  )
-  50% / 75% 75%
+  linear-gradient(90deg, currentColor, currentColor)
+  50% / 2px 75%
   no-repeat;"></div>
   </div>
   <div class="code">
 {% highlight css %}
 div {
 background:
-  linear-gradient(
-    -60deg,
-    transparent 0,
-    transparent calc(50% - 1px),
-    currentColor calc(50% - 1px),
-    currentColor calc(50% + 1px),
-    transparent calc(50% + 1px)
-  )
-  50% / 75% 75%
+  linear-gradient(90deg, currentColor, currentColor)
+  50% / 2px 75%
   no-repeat;
 }
 {% endhighlight %}
   <css-doodle use="var(--doodle-line1)"></css-doodle>
+  </div>
+</div>
+
+
+<div class="shape" data-name="line2">
+  <div class="preview">
+    <div style="background:
+  linear-gradient(
+    -60deg,
+    transparent calc(50% - 1px),
+    currentColor calc(50% - 1px),
+    currentColor calc(50% + 1px),
+    transparent calc(50% + 1px)
+  )
+  50% / 75% 75%
+  no-repeat;"></div>
+  </div>
+  <div class="code">
+{% highlight css %}
+div {
+background:
+  linear-gradient(
+    -60deg,
+    transparent calc(50% - 1px),
+    currentColor calc(50% - 1px),
+    currentColor calc(50% + 1px),
+    transparent calc(50% + 1px)
+  )
+  50% / 75% 75%
+  no-repeat;
+}
+{% endhighlight %}
+  <css-doodle use="var(--doodle-line2)"></css-doodle>
   </div>
 </div>
 

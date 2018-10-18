@@ -9,7 +9,6 @@ background:
 background:
   linear-gradient(
     110deg,
-    transparent 0,
     transparent 30%, currentColor 30%,
     currentColor 70%, transparent 70%
   )
@@ -53,18 +52,17 @@ background:
   no-repeat;
 
 
-# Line2
+# Line1
 background:
   linear-gradient(90deg, currentColor, currentColor)
   50% / 2px 75%
   no-repeat;
 
 
-# Line1
+# Line2
 background:
   linear-gradient(
     -60deg,
-    transparent 0,
     transparent calc(50% - 1px),
     currentColor calc(50% - 1px),
     currentColor calc(50% + 1px),
