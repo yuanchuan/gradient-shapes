@@ -1,33 +1,33 @@
 html, body, main, h1, pre, code, figure, p {
   margin: 0;
-	padding: 0;
+  padding: 0;
 }
 
 body {
-	background: #eaf0f5;
+  background: #eaf0f5;
   padding: 7em 5em 0;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
-	font-family:  /* songti */
-		Georgia,
-		"Nimbus Roman No9 L",
-		"Songti SC", STSong,
-		"AR PL New Sung", "AR PL SungtiL GB",
-		NSimSun,
-		SimSun,
-		"TW\-Sung",
-		"WenQuanYi Bitmap Song",
-		"AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE",
-		PMingLiU,
-		MingLiU,
-		serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family:  /* songti */
+    Georgia,
+    "Nimbus Roman No9 L",
+    "Songti SC", STSong,
+    "AR PL New Sung", "AR PL SungtiL GB",
+    NSimSun,
+    SimSun,
+    "TW\-Sung",
+    "WenQuanYi Bitmap Song",
+    "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE",
+    PMingLiU,
+    MingLiU,
+    serif;
 }
 
 main {
   max-width: 55em;
   margin: 0 auto;
-	padding: 0 1em;
-	box-sizing: border-box;
+  padding: 0 1em;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -40,9 +40,9 @@ header {
 }
 
 header p {
-	margin-top: .5em;
-	font-size: 1.4em;
-	color: rgba(75, 78, 104, 0.6196078431372549);
+  margin-top: .5em;
+  font-size: 1.4em;
+  color: rgba(75, 78, 104, 0.6196078431372549);
 }
 
 .preview {
@@ -53,23 +53,23 @@ header p {
 }
 
 @supports not (background: conic-gradient(#fff, #fff )) {
-	.preview {
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: 100%;
-	}
+  .preview {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+  }
 
-	[data-name="triangle2"] .preview {
-		background-image: url(images/triangle2.png);
-	}
+  [data-name="triangle2"] .preview {
+    background-image: url(images/triangle2.png);
+  }
 
-	[data-name="trapezoid"] .preview {
-		background-image: url(images/trapezoid.png);
-	}
+  [data-name="trapezoid"] .preview {
+    background-image: url(images/trapezoid.png);
+  }
 
-	[data-name="tag"] .preview {
-		background-image: url(images/tag.png);
-	}
+  [data-name="tag"] .preview {
+    background-image: url(images/tag.png);
+  }
 }
 
 .shape {
@@ -84,20 +84,20 @@ header p {
 }
 
 @media screen and (max-width: 50em) {
-	body {
-  	padding: 3em 2em 0;
-	}
-	.shape {
-  	flex-direction: column;
-	}
+  body {
+    padding: 3em 2em 0;
+  }
+  .shape {
+    flex-direction: column;
+  }
 
-	.preview {
-  	margin-right: 0;
-	}
+  .preview {
+    margin-right: 0;
+  }
 
-	.code css-doodle {
-  	display: none;
-	}
+  .code css-doodle {
+    display: none;
+  }
 }
 
 .code {
@@ -119,7 +119,7 @@ header p {
 .code figure {
   z-index: 2;
   position: relative;
-	overflow: auto;
+  overflow: auto;
 }
 
 .code pre {
@@ -140,16 +140,16 @@ header p {
 }
 
 footer {
-	padding: 6em 0 3em;
-	color: rgba(75, 78, 104, 0.3);
-	text-align: center;
+  padding: 6em 0 3em;
+  color: rgba(75, 78, 104, 0.3);
+  text-align: center;
 }
 
 footer a {
-	color: rgba(75, 78, 104, 0.6);
+  color: rgba(75, 78, 104, 0.6);
 }
 
 footer a:hover {
-	background: #4B4E68;
-	color: #fff;
+  background: #4B4E68;
+  color: #fff;
 }

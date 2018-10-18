@@ -1,50 +1,50 @@
 :root {
   --doodle-rectangular: (
-  	:doodle {
-			@size: 100%;
-			opacity: .05;
-			right: 0; top: 0;
-			background-blend-mode: color-burn;
-			background: @multi(50, (
+    :doodle {
+      @size: 100%;
+      opacity: .05;
+      right: 0; top: 0;
+      background-blend-mode: color-burn;
+      background: @multi(50, (
         linear-gradient(currentColor, currentColor)
           @r(-10%, 110%) @r(-10%, 110%) / @r(50px) @lr()
           no-repeat
-			));
-		}
-	);
+      ));
+    }
+  );
 
-	--doodle-circle: (
-  	:doodle {
-			@size: 100%;
-			opacity: .05;
-			right: 0; top: 0;
-			background-blend-mode: color-burn;
-			background: @multi(50, (
-				radial-gradient(currentColor 50%, transparent 50%)
+  --doodle-circle: (
+    :doodle {
+      @size: 100%;
+      opacity: .05;
+      right: 0; top: 0;
+      background-blend-mode: color-burn;
+      background: @multi(50, (
+        radial-gradient(currentColor 50%, transparent 50%)
           @r(-10%, 110%) @r(-10%, 110%) / @r(50px) @lr()
           no-repeat
-			));
-		}
-	);
+      ));
+    }
+  );
 
-	--doodle-ring: (
-	  :doodle {
-			@size: 100%;
-			right: 0; top: 0;
-			opacity: .03;
-			background-blend-mode: color-burn;
-			background: @multi(20, (
-				radial-gradient(
-					transparent calc(50% - calc(@n() * .5px)),
+  --doodle-ring: (
+    :doodle {
+      @size: 100%;
+      right: 0; top: 0;
+      opacity: .03;
+      background-blend-mode: color-burn;
+      background: @multi(20, (
+        radial-gradient(
+          transparent calc(50% - calc(@n() * .5px)),
           currentColor calc(50% - calc(@n() * .5px)),
-					currentColor calc(50% + calc(@n() * .5px)),
+          currentColor calc(50% + calc(@n() * .5px)),
           transparent calc(50% + calc(@n() * .5px))
-				)
-				50% 50% / calc(@n() * 5em) calc(@n() * 5em)
-				no-repeat
-			));
-		}
-	);
+        )
+        50% 50% / calc(@n() * 5em) calc(@n() * 5em)
+        no-repeat
+      ));
+    }
+  );
 
   --doodle-line2: (
     :doodle {
@@ -61,46 +61,46 @@
   );
 
 
-	--doodle-triangle2: (
+  --doodle-triangle2: (
     :doodle {
-			@size: 100%;
-			right: 0; top: 0;
-			color: #4B4E66;
-			opacity: .05;
-			background-blend-mode: color-burn;
-			background: @multi(80, (
+      @size: 100%;
+      right: 0; top: 0;
+      color: #4B4E66;
+      opacity: .05;
+      background-blend-mode: color-burn;
+      background: @multi(80, (
         conic-gradient(
           from 145deg,
           currentColor 0, currentColor 20%, transparent 20%
         )
         @r(-10%, 150%, .1) 100% / @r(80px) @lr()
         no-repeat
-			));
-		}
-	);
+      ));
+    }
+  );
 
-	--doodle-tag: (
-  	:doodle {
-			@grid: 1x2 / 20em 10em;
-			right: -2em; top: -2.4em;
-			opacity: .3;
-		}
-		color: #E1E4E8;
-		background:
-			conic-gradient(
-				from -45deg,
-				currentColor 25%, currentColor 50%,
-				transparent 50%, transparent 75%,
-				currentColor 75%
-			)
-			50% 120% / 30% 80%
-			no-repeat;
+  --doodle-tag: (
+    :doodle {
+      @grid: 1x2 / 20em 10em;
+      right: -2em; top: -2.4em;
+      opacity: .3;
+    }
+    color: #E1E4E8;
+    background:
+      conic-gradient(
+        from -45deg,
+        currentColor 25%, currentColor 50%,
+        transparent 50%, transparent 75%,
+        currentColor 75%
+      )
+      50% 120% / 30% 80%
+      no-repeat;
 
-		@nth(1) {
-			transform: translateX(70%);
-		}
-		@nth(2) {
-    	transform: scale(.5) translateY(-27%);
-		}
-	);
+    @nth(1) {
+      transform: translateX(70%);
+    }
+    @nth(2) {
+      transform: scale(.5) translateY(-27%);
+    }
+  );
 }
