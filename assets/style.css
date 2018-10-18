@@ -1,0 +1,155 @@
+html, body, main, h1, pre, code, figure, p {
+  margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #eaf0f5;
+  padding: 7em 5em 0;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	font-family:  /* songti */
+		Georgia,
+		"Nimbus Roman No9 L",
+		"Songti SC", STSong,
+		"AR PL New Sung", "AR PL SungtiL GB",
+		NSimSun,
+		SimSun,
+		"TW\-Sung",
+		"WenQuanYi Bitmap Song",
+		"AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE",
+		PMingLiU,
+		MingLiU,
+		serif;
+}
+
+main {
+  max-width: 55em;
+  margin: 0 auto;
+	padding: 0 1em;
+	box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.2em;
+  color: #4B4E68;
+}
+
+header {
+  margin-bottom: 4em;
+}
+
+header p {
+	margin-top: .5em;
+	font-size: 1.4em;
+	color: rgba(75, 78, 104, 0.6196078431372549);
+}
+
+.preview {
+  background-color: #fff;
+  padding: 1em;
+  margin-bottom: auto;
+  margin-right: 1em;
+}
+
+@supports not (background: conic-gradient(#fff, #fff )) {
+	.preview {
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 100%;
+	}
+
+	[data-name="triangle2"] .preview {
+		background-image: url(images/triangle2.png);
+	}
+
+	[data-name="trapezoid"] .preview {
+		background-image: url(images/trapezoid.png);
+	}
+
+	[data-name="tag"] .preview {
+		background-image: url(images/tag.png);
+	}
+}
+
+.shape {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.preview > div {
+  width: 9em;
+  height: 9em;
+  color: #4B4E68;
+}
+
+@media screen and (max-width: 50em) {
+	body {
+  	padding: 3em 2em 0;
+	}
+	.shape {
+  	flex-direction: column;
+	}
+
+	.preview {
+  	margin-right: 0;
+	}
+
+	.code css-doodle {
+  	display: none;
+	}
+}
+
+.code {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+  position: relative;
+  overflow: hidden;
+}
+
+.code css-doodle {
+  position: absolute;
+  z-index: 1;
+  color: #4B4E66;
+}
+
+.code figure {
+  z-index: 2;
+  position: relative;
+	overflow: auto;
+}
+
+.code pre {
+  font: 1.2em/1.4 Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+  overflow: auto;
+  padding: 1em;
+}
+
+.code code.language-css {
+  position: relative;
+  top: -1em;
+}
+
+.code code.language-css span:nth-child(1),
+.code code.language-css span:nth-child(2),
+.code code.language-css span:last-child {
+  display: none;
+}
+
+footer {
+	padding: 6em 0 3em;
+	color: rgba(75, 78, 104, 0.3);
+	text-align: center;
+}
+
+footer a {
+	color: rgba(75, 78, 104, 0.6);
+}
+
+footer a:hover {
+	background: #4B4E68;
+	color: #fff;
+}

@@ -1,0 +1,74 @@
+#!/usr/bin/env node
+
+const { readFileSync, writeFileSync } = require('fs');
+
+const input = process.argv[2];
+const target = process.argv[3];
+
+if (!input) {
+  console.error('\nMissing shape file.\n');
+  process.exit();
+}
+
+const generateShape = ({ code, name })=> `
+<div class="shape" data-name="${ name }">
+  <div class="preview">
+    <div style="${ code }"></div>
+  </div>
+  <div class="code">
+{% highlight css %}
+div {
+${ code }
+}
+{% endhighlight %}
+  <css-doodle use="var(--doodle-${ name })"></css-doodle>
+  </div>
+</div>
+`;
+
+
+function read(file) {
+  return readFileSync(file, 'utf-8');
+}
+
+function parse(content) {
+  let lines = content.split('\n');
+  let ret = [], block = [], name;
+  function put() {
+    if (block.length) {
+      ret.push({
+        name: name.toLowerCase(),
+        code: block.join('\n')
+      });
+      block = [];
+      name = '';
+    }
+  }
+  lines.forEach(line => {
+    if (line.startsWith('#')) {
+      put();
+      name = line.replace(/^#\s?/g, '');
+    }
+    else if (line.trim().length) {
+      block.push(line);
+    }
+  });
+  if (block.length) {
+    put();
+  }
+  return ret;
+}
+
+const result = `---
+layout: default
+---
+
+${ parse(read(input)).map(generateShape).join('\n') }
+`
+
+if (target) {
+  writeFileSync(target, result)
+  console.log('Wrote to ', target);
+} else {
+  console.log(result);
+}
