@@ -70,8 +70,17 @@ header p {
   [data-name="tag"] .preview {
     background-image: url(images/tag.png);
   }
+
   [data-name="spaceship"] .preview {
     background-image: url(images/spaceship.png);
+  }
+
+  [data-name="sandglass"] .preview {
+    background-image: url(images/sandglass.png);
+  }
+
+  [data-name="tie"] .preview {
+    background-image: url(images/tie.png);
   }
 }
 

@@ -125,3 +125,28 @@ background:
   )
   50% 50% / 50% 50%
   no-repeat;
+
+
+# Sandglass
+background:
+  conic-gradient(
+    from 90deg,
+    transparent 12.5%, currentColor 12.5%,
+    currentColor 37.5%, transparent 37.5%,
+    transparent 62.5%, currentColor 62.5%,
+    currentColor 87.5%, transparent 87.5%
+  )
+  50% 50% / 32% 50%
+  no-repeat;
+
+
+# Tie
+background:
+  conic-gradient(
+    transparent 60deg, currentColor 60deg,
+    currentColor 120deg, transparent 120deg,
+    transparent 240deg, currentColor 240deg,
+    currentColor 300deg, transparent 300deg
+  )
+  50% 50% / 50% 50%
+  no-repeat;
