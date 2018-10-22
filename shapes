@@ -148,3 +148,13 @@ background:
   )
   50% 50% / 50% 50%
   no-repeat;
+
+
+# Hamburger
+background:
+  repeating-linear-gradient(
+    transparent 0%, transparent 15%,
+    currentColor 15%, currentColor 30%
+  )
+  50% 50% / 50% 60%
+  no-repeat;
