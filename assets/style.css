@@ -52,11 +52,11 @@ header p {
   margin-right: 1em;
 }
 
-@supports not (background: conic-gradient(#fff, #fff )) {
+@supports not (background: conic-gradient(#fff, #fff)) {
   .preview {
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
+    background-position: 0  center;
+    background-size: auto 100%;
   }
 
   [data-name="triangle2"] .preview {
@@ -89,10 +89,11 @@ header p {
   margin-bottom: 1em;
 }
 
-.preview > div {
+.graph {
   width: 9em;
   height: 9em;
   color: #4B4E68;
+  mix-blend-mode: darken;
 }
 
 .code {
@@ -153,21 +154,18 @@ footer a:hover {
   body {
     padding: 3em 1em 0;
   }
-  .preview > div {
+  .graph {
     background-color: rgba(234, 240, 244, 0.38823529411764707) !important;
   }
   .shape {
     flex-direction: column;
   }
-
   .preview {
     margin-right: 0;
   }
-
   .code pre {
     padding: 0;
   }
-
   .code css-doodle {
     display: none;
   }

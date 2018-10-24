@@ -13,7 +13,7 @@ if (!input) {
 const generateShape = ({ code, name })=> `
 <div class="shape" data-name="${ name }">
   <div class="preview">
-    <div style="${ code }"></div>
+    <div style="${ code }" class="graph"></div>
   </div>
   <div class="code">
 {% highlight css %}
