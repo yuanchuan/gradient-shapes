@@ -1,7 +1,7 @@
 # Rectangular
 background:
   linear-gradient(currentColor, currentColor)
-  50% 50% / 50% 50%
+  50% / 50% 50%
   no-repeat;
 
 
@@ -12,14 +12,14 @@ background:
     transparent 30%, currentColor 30%,
     currentColor 70%, transparent 70%
   )
-  50% 50% / 90% 40%
+  50% / 90% 40%
   no-repeat;
 
 
 # Circle
 background:
   radial-gradient(currentColor 50%, transparent 50%)
-  50% 50% / 75% 75%
+  50% / 75% 75%
   no-repeat;
 
 
@@ -36,7 +36,7 @@ background:
 # oval
 background:
   radial-gradient(currentColor 50%, transparent 50%)
-  50% 50% / 75% 45%
+  50% / 75% 45%
   no-repeat;
 
 
@@ -48,7 +48,7 @@ background:
     currentColor calc(50% + 1px),
     transparent calc(50% + 1px)
   )
-  50% 50% / 75% 75%
+  50% / 75% 75%
   no-repeat;
 
 
@@ -75,8 +75,7 @@ background:
 # Triangle1
 background:
   linear-gradient(
-    -135deg,
-    currentColor 50%, transparent 50%
+    -135deg, currentColor 50%, transparent 50%
   )
   50% / 50% 50%
   no-repeat;
@@ -98,7 +97,7 @@ background:
     from 165deg at 50% -86%,
     currentColor 0, currentColor 8%, transparent 8%
   )
-  50% 50% / 50% 50%
+  50% / 50% 50%
   no-repeat;
 
 
@@ -121,7 +120,7 @@ background:
     transparent 25deg, currentColor 25deg,
     currentColor 65deg, transparent 65deg
   )
-  50% 50% / 50% 50%
+  50% / 50% 50%
   no-repeat;
 
 
@@ -134,7 +133,7 @@ background:
     transparent 62.5%, currentColor 62.5%,
     currentColor 87.5%, transparent 87.5%
   )
-  50% 50% / 32% 50%
+  50% / 32% 50%
   no-repeat;
 
 
@@ -146,7 +145,7 @@ background:
     transparent 240deg, currentColor 240deg,
     currentColor 300deg, transparent 300deg
   )
-  50% 50% / 50% 50%
+  50% / 50% 50%
   no-repeat;
 
 
@@ -156,5 +155,5 @@ background:
     transparent -1%, transparent 14%,
     currentColor 14%, currentColor 28%
   )
-  50% 50% / 50% 60%
+  50% / 50% 60%
   no-repeat;
