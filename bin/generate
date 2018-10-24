@@ -82,7 +82,7 @@ ${ parse(read(input)).map(generateShape).join('\n') }
 
 if (target) {
   writeFileSync(target, result)
-  console.log('Wrote to ', target);
+  console.log('Wrote to', target);
 } else {
   console.log(result);
 }
