@@ -10,10 +10,17 @@ if (!input) {
   process.exit();
 }
 
-const generateShape = ({ code, name })=> `
-<div class="shape" data-name="${ name }">
+const generateShape = ({ code, name, type })=> `
+<div class="shape" data-name="${ name }" data-type="${ type }">
   <div class="preview">
     <div style="${ code }" class="graph"></div>
+    ${ (type == 'conic')
+      ? `<div class="info">
+          <button type="button" class="info-handle">!</button>
+          <span class="info-content">Your browser doesn't support conic-gradient yet. </span>
+         </div>`
+      : ''
+    }
   </div>
   <div class="code">
 {% highlight css %}
@@ -34,11 +41,18 @@ function read(file) {
 function parse(content) {
   let lines = content.split('\n');
   let ret = [], block = [], name;
+
   function put() {
     if (block.length) {
+      let code = block.join('\n');
+      let type = '';
+      if (code.includes('linear-gradient')) type = 'linear';
+      else if (code.includes('radial-gradient')) type = 'radial';
+      else if (code.includes('conic-gradient')) type = 'conic';
       ret.push({
         name: name.toLowerCase(),
-        code: block.join('\n')
+        code,
+        type
       });
       block = [];
       name = '';

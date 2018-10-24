@@ -52,11 +52,57 @@ header p {
   margin-right: 1em;
 }
 
+.info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
 @supports not (background: conic-gradient(#fff, #fff)) {
+  [data-type="conic"] .info {
+    display: block;
+  }
+  .info-handle {
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+    height: 1em;
+    width: 1em;
+    font-size: 1em;
+    background: rgba(255, 139, 35, 0.12);
+    color: rgb(255, 127, 7);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-content {
+    display: none;
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    width: 12.5em;
+    font-size: .8em;
+    z-index: 3;
+    background: #fff;
+    color: #fe9129;
+    padding: .5em;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .06)
+  }
+
+  .info-handle:hover ~ .info-content,
+  .info-handle:active ~ .info-content {
+    display: block;
+  }
+
   .preview {
     background-repeat: no-repeat;
     background-position: 0  center;
     background-size: auto 100%;
+    position: relative;
   }
 
   [data-name="triangle2"] .preview {
@@ -153,6 +199,10 @@ footer a:hover {
 @media screen and (max-width: 50em) {
   body {
     padding: 3em 1em 0;
+  }
+  .info {
+    left: 9em;
+    top: 1em;
   }
   .graph {
     background-color: rgba(234, 240, 244, 0.38823529411764707) !important;
